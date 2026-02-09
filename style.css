@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f7f6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.stat-box {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.stock-box { background: #3498db; }
+.sell-box { background: #2ecc71; }
+.profit-box { background: #9b59b6; }
+
+.stat-box p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.input-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 140px;
+}
+
+.btn-add {
+    padding: 10px 25px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-reset {
+    padding: 10px 25px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.sell-input {
+    width: 60px !important;
+    margin: 0;
+    padding: 5px;
+}
+
+.btn-sell {
+    background: #f1c40f;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}

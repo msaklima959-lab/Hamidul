@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্থায়ী বাল্ক স্টক ও লাভ হিসাব</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>স্মার্ট ইনভেন্টরি (স্থায়ী হিসাব)</h2>
+    
+    <div class="stats">
+        <div class="stat-box stock-box">
+            <h4>মোট স্টক মূল্য</h4>
+            <p id="totalStock">০</p>
+        </div>
+        <div class="stat-box sell-box">
+            <h4>মোট বিক্রি</h4>
+            <p id="totalSell">০</p>
+        </div>
+        <div class="stat-box profit-box">
+            <h4>মোট লাভ</h4>
+            <p id="totalProfit">০</p>
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="pName" placeholder="পণ্যের নাম">
+        <input type="number" id="pBuy" placeholder="কেনা দাম">
+        <input type="number" id="pSell" placeholder="বিক্রয় মূল্য">
+        <input type="number" id="pQty" placeholder="পরিমাণ (Qty)">
+        <button class="btn-add" onclick="addItem()">স্টকে যোগ করুন</button>
+        <button class="btn-reset" onclick="resetAll()">সব রিসেট</button>
+    </div>
+
+    <table id="itemTable">
+        <thead>
+            <tr>
+                <th>পণ্যের নাম</th>
+                <th>স্টক পরিমাণ</th>
+                <th>কেনা দাম</th>
+                <th>বিক্রয় মূল্য</th>
+                <th>বিক্রি করুন (Qty)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
